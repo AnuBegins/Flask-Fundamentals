@@ -1,0 +1,7 @@
+{% if errors %}
+    <div >
+        {%- for msg in errors %}
+        <p class="text-danger">{{ msg }}</p>
+        {% endfor -%}
+    </div>
+{% endif %}

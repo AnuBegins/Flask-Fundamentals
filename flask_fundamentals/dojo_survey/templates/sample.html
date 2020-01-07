@@ -1,0 +1,23 @@
+
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <form action ='result' method ='post'> <!-- creates form element for user input-->
+            <h2>Buy apples</h2>
+            Quantity: 
+            <select name ='quantity'>  <!--creates a drop-down list -->
+                <option value ='1'>1</option>  <!-- specifies available option in list-->
+                <option value ='2'>2</option>
+            </select>
+            Message: <textarea name = 'message'></textarea> <!-- form element for multi-line text input control-->
+            <input type='checkbox' name ='extra_large' value ='yes'> Want extra large apples?  <!-- specifies an input field where the user can enter data.-->
+            
+            <p>Please select your preferred contact method:</p>
+            <input type ='radio' name ='contact' value ='email'>Email
+            <input type ='radio' name ='contact' value ='phone'>Phone
+            <input type ='submit' value ='Submit'>
+        </form>
+    </body>
+</html>

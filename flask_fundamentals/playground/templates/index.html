@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+        *{
+        outline: 0px dotted red;
+        }
+        h1 {
+            color: maroon;
+            text-align: center;
+        }
+        .row {
+            padding: 10px;
+            text-align: center;
+        }
+        button {
+            background-color: {{color}};
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            vertical-align: top;
+            padding: 20px;
+            margin: 10px;
+        }
+        </style>
+      <title>Playground Blocks</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>My playground blocks</h1>
+            <div class="row">
+                {% for x in range(blocks) %}
+                <button></button>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>

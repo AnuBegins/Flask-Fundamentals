@@ -1,0 +1,11 @@
+
+form {
+    display: block;
+    margin-top: 0em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.error {
+    color: red;
+}

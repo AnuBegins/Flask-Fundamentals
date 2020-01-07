@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+        *{
+            outline: 0px dotted red;
+            }
+            h1 {
+                color: maroon;
+                text-align: center;
+            }
+            .row {
+                padding: 2px;
+                text-align: center;
+            }
+            .square1, .square2 {
+                height: 75px;
+                width: 75px;
+                display: inline-block;
+                vertical-align: top;
+                padding: 5px;
+            }
+            .square1 {
+                background-color: red;
+            }
+            .square2 {
+                background-color: black;
+            }
+
+        </style>
+      <title>Checkerboard</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Checkers!</h1>
+            {% for y in range(rowz) %}
+            <div class="row">
+                {% for x in range(cols) %}
+                    <div class="square{{ (x+y)%2 + 1 }}"></div>
+                {% endfor %}
+            </div>
+            {% endfor%}
+        </div>
+    </body>
+</html>

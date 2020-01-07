@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+        *{
+        outline: 0px dotted red; 
+        }
+        </style>
+        <title>Results Table</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta charset="utf-8">    
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class="container">
+            <h2 style="text-align:center; color: maroon">Submitted Info</h2>
+            <table class="table table-bordered table-striped">
+                {% for key,value in result.items() %}
+                <thead>
+                    <tr>
+                        <th>{{ key }}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ value }}</td>
+                    </tr>
+                </tbody>
+                {% endfor %}
+            </table>
+            <button class="btn btn-primary" type="submit">Go Back</button>
+        </div>
+    </body>
+</html>
